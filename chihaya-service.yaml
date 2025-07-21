@@ -1,0 +1,19 @@
+# chihaya-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: chihaya-service
+  namespace: default
+spec:
+  type: ClusterIP
+  selector:
+    app: chihaya
+  ports:
+  - name: http
+    protocol: TCP
+    port: 6969
+    targetPort: 6969
+  - name: udp
+    protocol: UDP
+    port: 6969
+    targetPort: 6969

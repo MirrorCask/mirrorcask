@@ -1,0 +1,16 @@
+chihaya:
+  logic:
+    peer_store:
+      driver: memory
+      config:
+        shards: 1024
+        gc_interval: 5m
+ 
+  frontend:
+    http:
+      addr: 0.0.0.0:6969
+      read_timeout: 10s
+      write_timeout: 10s
+      allow_ips_from_request: true
+    udp:
+      addr: 0.0.0.0:6969
