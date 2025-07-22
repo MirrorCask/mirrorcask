@@ -27,7 +27,7 @@ spec:
           protocol: UDP
         volumeMounts:
         - name: config-volume
-          mountPath: /etc/chihaya/chihaya.yaml
+          mountPath: /etc/chihaya.yaml
           subPath: chihaya.yaml
       volumes:
       - name: config-volume
